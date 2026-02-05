@@ -17,6 +17,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const pedersen_1 = __importDefault(require("./pedersen"));
 __exportStar(require("./pedersen"), exports);
+const pedersen_1 = __importDefault(require("./pedersen"));
 pedersen_1.default.generator().then(g => console.log(g));

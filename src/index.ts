@@ -1,5 +1,5 @@
-import pedersen from './pedersen'
+export * from './pedersen';
 
-export * from './pedersen'
+import pedersen from './pedersen';
 
-pedersen.generator().then(g => console.log(g))
+pedersen.generator().then(g => console.log(g));
