@@ -8,12 +8,12 @@ declare function isPrimeMillerRabin(n: bigint, k?: number): boolean;
 declare function randomBlinding(bytes?: number): bigint;
 declare function generator(bits?: number): Promise<PedersenParameters>;
 declare function modInverse(a: bigint, p: bigint): bigint;
-declare function commitment(m: bigint, r: bigint, parans: PedersenParameters): bigint;
-declare function sum(C1: bigint, C2: bigint, parans: PedersenParameters): bigint;
-declare function sub(C1: bigint, C2: bigint, parans: PedersenParameters): bigint;
-declare function multiply(C: bigint, scalar: bigint, parans: PedersenParameters): bigint;
+declare function commitment(m: bigint, r: bigint, params: PedersenParameters): bigint;
+declare function sum(C1: bigint, C2: bigint, params: PedersenParameters): bigint;
+declare function sub(C1: bigint, C2: bigint, params: PedersenParameters): bigint;
+declare function multiply(C: bigint, scalar: bigint, params: PedersenParameters): bigint;
 declare const pedersen: {
-    DEFAULT_GENERRATOR: {
+    DEFAULT_GENERATOR: {
         p: bigint;
         g: bigint;
         h: bigint;
